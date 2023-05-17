@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    font-family: Arial, sans-serif;
+    background-color: #C5734F;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0 9rem;
+}
+
+.nav{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+#logo {
+    flex-direction: column;
+    height: 3rem;
+    width: 3rem;
+}
+.search {
+  display: flex;
+}
+
+.search input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.search button {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.links{
+    flex-direction: column;
+    
+    
+}
+
+.links ul li {
+    display: inline-block;
+    padding: 10px 20px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+section:nth-child(even) {
+    background: #eee;
+}
+
+.sub-heading{
+    text-align: center;
+    color:var(--green);
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--black);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 8rem 3rem;
+}
+
+.btn:hover{
+    background-color: var(--green);
+    letter-spacing: 1rem;
+}
+
+.heading {
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.Popular .box-container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 1.5rem;
+}
+
+.Popular .box-container .box{
+    padding:2.5rem;
+    background:#fff ;
+    border: 5rem;
+    border: 1rem solid rgba(0,0,0.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
