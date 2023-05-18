@@ -7,17 +7,27 @@ html, body {
     width: 100%;
     height: 100%;
 }
+
 .container {
     font-family: Arial, sans-serif;
-    background-color: #C5734F;
+    background-color: #ff7e4b;
     background-position: center;
     background-size: cover;
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
-    padding: 0 9rem;
+   
+}
+
+.hero {
+    width: 100%;
+    height: 30rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url("posho.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 .nav{
@@ -26,14 +36,20 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 9rem;
    
 }
 
 #logo {
     flex-direction: column;
     height: 3rem;
-    width: 3rem;
+    width: auto;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+    padding: 20px 0;
 }
+
 .search {
   display: flex;
 }
@@ -70,58 +86,42 @@ a {
 }
 
 section{
-    padding: 2rem 9%;
-}
-
-section:nth-child(even) {
-    background: #eee;
-}
-
-.sub-heading{
-    text-align: center;
-    color:var(--green);
-    font-size: 2rem;
-    padding-top: 1rem;
-}
-
-.btn{
-    margin-top: 1rem;
-    display: inline-block;
-    font-size: 1.7rem;
-    color: #fff;
-    background: var(--black);
-    border-radius: 0.5rem;
-    cursor: pointer;
-    padding: 8rem 3rem;
-}
-
-.btn:hover{
-    background-color: var(--green);
-    letter-spacing: 1rem;
+    padding: 2rem 9rem;
 }
 
 .heading {
     text-align: center;
-    color: var(--black);
+    color:#f1dfdf;
     font-size: 3rem;
     padding-bottom: 2rem;
     text-transform: uppercase;
 }
 
-.Popular .box-container{
+
+
+.grid-container {
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(28rem, 1fr));
-    gap: 1.5rem;
+    /* grid-template: auto / auto auto; */
+    row-gap: 50px;
+    column-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    padding: 10px;
+    height: 40%;
+    width: 100%;
 }
 
-.Popular .box-container .box{
-    padding:2.5rem;
-    background:#fff ;
-    border: 5rem;
-    border: 1rem solid rgba(0,0,0.2);
-    box-shadow: var(--box-shadow);
-    position: relative;
-    overflow: hidden;
+.grid-item {
+    font-size: 30px;
     text-align: center;
+    width: 15rem;
+    height:15rem;
 }
 
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: #333;
+}
+        
