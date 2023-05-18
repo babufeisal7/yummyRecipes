@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddRecipe</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <section class="recipes-container">
+
+        <div class="navbar">
+            <div id="logo">
+                <h4>YUMMY RECIPES</h4>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+        
+            <div class="rlinks">
+                <ul>
+        
+                    <li><a class="active" href="#home">home</a></li>
+                    <li><a href="#">categories</a></li>
+                    <li><a href="#">favorites</a></li>
+                    <li><a href="#">signup</a></li>
+                </ul>
+            </div>
+        
+        </div>
+
+        <div class="rcontent">
+            <div class="image-box">
+                <img src="posho.jpg" alt="Recipe Image">
+            </div>
+            <div class="form-box">
+                <h2>Add Recipe</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="recipe-name">Recipe Name:</label>
+                        <input type="text" id="recipe-name" name="recipe-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipe-description">Recipe Description:</label>
+                        <textarea id="recipe-description" name="recipe-description" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category:</label>
+                        <select id="category" name="category" required>
+                            <option value="">Select Category</option>
+                            <option value="breakfast">Breakfast</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="dinner">Dinner</option>
+                            <option value="dessert">Dessert</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="subcategory">Subcategory:</label>
+                        <input type="text" id="subcategory" name="subcategory">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipe-image">Upload Recipe Image:</label>
+                        <input type="file" id="recipe-image" name="recipe-image" accept="image/*">
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

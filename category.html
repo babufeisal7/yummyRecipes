@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form>
+      <div>
+        <h2>Category</h2>
+      </div>
+      <div class="form-group">
+        <label for="categoryName">Add Category Name:</label>
+        <input type="text" id="categoryName" name="categoryName" placeholder="Enter category name" required>
+      </div>
+      <div class="form-group">
+        <label for="categoryDescription">Add Category Description:</label>
+        <input type="text" id="categoryDescription" name="categoryDescription" placeholder="Enter category description"
+          required>
+      </div>
+            <div class="form-group image-box">
+              <label for="categoryImage">Category Image:</label>
+              <input type="file" id="categoryImage" name="categoryImage" accept="image/*" required>
+              <label class="image-preview-label" for="categoryImage">Image Preview:</label>
+              <img class="image-preview" src="#" alt="Image Preview">
+            </div>
+      <input type="submit" value="Add Category">
+    </form>
+</body>
+</html>                   
